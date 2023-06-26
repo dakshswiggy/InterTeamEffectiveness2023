@@ -1,0 +1,38 @@
+UPDATE InterTeamEffectiveness_Survey
+SET question_1 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.primary}' THEN '${row.updatedFields.question_1}'`).join('\n')}}
+END,
+question_2 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_2}'`).join('\n')}}
+END,
+question_3 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_3}'`).join('\n')}}
+END,
+question_4 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_4}'`).join('\n')}}
+END,
+question_5 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_5}'`).join('\n')}}
+END,
+question_6 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_6}'`).join('\n')}}
+END,
+question_7 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_7}'`).join('\n')}}
+END,
+question_8 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_8}'`).join('\n')}}
+END,
+question_9 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_9}'`).join('\n')}}
+END,
+question_10 = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.question_10}'`).join('\n')}}
+END,
+open_ended = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}' THEN '${row.updatedFields.open_ended}'`).join('\n')}}
+END,
+relevancy = CASE
+  {{Table1.updatedRows.map((row) => `WHEN [primary] = '${row.allFields.primary}'THEN '${row.updatedFields.relevancy}'`).join('\n')}}
+END
+WHERE [primary] IN ({{Table1.updatedRows.map((row) => `'${row.allFields.primary}'`).join(',')}});

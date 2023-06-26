@@ -1,0 +1,1 @@
+Select * from InterTeamEffectiveness_Survey where employee_email_id = '{{appsmith.user.email}}' order by feedback_for_team_name asc;

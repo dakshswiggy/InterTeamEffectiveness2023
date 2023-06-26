@@ -1,0 +1,36 @@
+update  InterTeamEffectiveness_Survey
+SET question_1 =''
+where  question_1 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_2 =''
+where  question_2 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_3 =''
+where  question_3 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_4 =''
+where  question_4 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_5 =''
+where  question_5 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_6 =''
+where  question_6 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_7 =''
+where  question_7 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_8 =''
+where  question_8 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_9 =''
+where  question_9 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET question_10 =''
+where  question_10 ='undefined'
+update  InterTeamEffectiveness_Survey
+SET open_ended =''
+where  open_ended ='undefined'
+update  InterTeamEffectiveness_Survey
+SET relevancy =''
+where  relevancy ='undefined'

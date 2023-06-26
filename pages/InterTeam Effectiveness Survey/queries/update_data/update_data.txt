@@ -1,0 +1,4 @@
+UPDATE InterTeamEffectiveness_Survey
+  SET question_1 = '{{Table1.updatedRow.question_1}}',question_2 = '{{Table1.updatedRow.question_2}}',question_3 = '{{Table1.updatedRow.question_3}}',question_4 = '{{Table1.updatedRow.question_4}}',question_5 = '{{Table1.updatedRow.question_5}}',question_6 = '{{Table1.updatedRow.question_6}}',question_7 = '{{Table1.updatedRow.question_7}}',question_8 = '{{Table1.updatedRow.question_8}}',question_9 = '{{Table1.updatedRow.question_9}}',question_10 = '{{Table1.updatedRow.question_10}}',open_ended = '{{Table1.updatedRow.open_ended}}',timestamp  = '{{Date()}}',relevancy = '{{Table1.updatedRow.relevancy}}'
+
+  WHERE employee_email_id = '{{appsmith.user.email}}' AND feedback_for_team_name = '{{Table1.updatedRow.feedback_for_team_name}}';

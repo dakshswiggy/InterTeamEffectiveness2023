@@ -1,0 +1,6 @@
+INSERT INTO InterTeamEffectiveness_Survey
+  (employee_email_id,feedback_for_team_name,question_1,question_2,question_3,question_4,question_5,question_6,question_7,question_8,question_9,question_10,open_ended,timestamp)
+VALUES
+  (
+    '{{JSONForm2.formData.employee_email_id}}','{{JSONForm2.formData.feedback_for_team_name}}','{{JSONForm2.formData.question_1}}','{{JSONForm2.formData.question_2}}','{{JSONForm2.formData.question_3}}','{{JSONForm2.formData.question_4}}','{{JSONForm2.formData.question_5}}','{{JSONForm2.formData.question_6}}','{{JSONForm2.formData.question_7}}','{{JSONForm2.formData.question_8}}','{{JSONForm2.formData.question_9}}','{{JSONForm2.formData.question_10}}','{{JSONForm2.formData.open_ended}}','{{JSONForm2.formData.TimeStamp}}'
+  );
