@@ -2497,7 +2497,7 @@
               "boxShadow": "none",
               "mobileBottomRow": 98,
               "widgetName": "Button5",
-              "onClick": "{{update_data.run().then(() => {remove_undefined.run().then(() => {get_data.run()});\n});}}",
+              "onClick": "{{update_data.run().then(() => {\n  showAlert('Thank You. Your response has been recorded.', '');\n});}}",
               "buttonColor": "#14532d",
               "dynamicPropertyPathList": [
                 {
