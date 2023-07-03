@@ -178,7 +178,7 @@
               "defaultSelectedRowIndex": "1",
               "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
+              "isVisibleFilters": false,
               "isVisible": true,
               "fontStyle": "",
               "enableClientSideSearch": true,
@@ -210,7 +210,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1687782295668,
-              "originalBottomRow": 92,
+              "originalBottomRow": 95,
               "primaryColumnId": "feedback_for_team_name",
               "defaultSelectedRowIndices": [
                 0
@@ -865,7 +865,7 @@
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "v4off5aq2p",
-              "allowAddNewRow": true,
+              "allowAddNewRow": false,
               "minWidth": 450,
               "tableData": "{{get_data.data}}",
               "label": "Data",
@@ -875,7 +875,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 37,
+              "originalTopRow": 40,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -1866,10 +1866,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
-              "originalTopRow": 103,
+              "originalTopRow": 102,
               "disabledWhenInvalid": false,
               "borderRadius": "0px",
-              "originalBottomRow": 107,
+              "originalBottomRow": 106,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -1922,7 +1922,7 @@
               "originalTopRow": 96,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 101,
+              "originalBottomRow": 100,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -2427,10 +2427,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 33,
+              "originalTopRow": 36,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 37,
+              "originalBottomRow": 40,
               "fontSize": "0.7rem",
               "minDynamicHeight": 4
             },
@@ -2488,7 +2488,7 @@
               "originalTopRow": 18,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 33,
+              "originalBottomRow": 36,
               "fontSize": "0.8rem",
               "minDynamicHeight": 4
             },
@@ -2541,11 +2541,11 @@
               "isLoading": false,
               "mobileTopRow": 94,
               "responsiveBehavior": "hug",
-              "originalTopRow": 103,
+              "originalTopRow": 102,
               "disabledWhenInvalid": false,
               "borderRadius": "0px",
               "mobileLeftColumn": 24,
-              "originalBottomRow": 107,
+              "originalBottomRow": 106,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }
