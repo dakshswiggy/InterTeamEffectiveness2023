@@ -793,7 +793,7 @@
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                  "onSave": "{{update_data.run(() => get_data.run(), () => showAlert('Error. Could not Save output','error'))}}",
+                  "onSave": "{{update_data.run(() => {\n  get_data.run();\n}, () => {\n  showAlert('Error. Could not Save output. Please remove the single quote(\\') special characters from the question - Tell us more.', 'error');\n});}}",
                   "fontStyle": "",
                   "saveActionIconName": "saved"
                 },
@@ -862,7 +862,7 @@
               "key": "9j3zg6n4vn",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 63,
               "textSize": "0.875rem",
               "widgetId": "v4off5aq2p",
               "allowAddNewRow": false,
@@ -945,12 +945,12 @@
                 "notification"
               ],
               "topRow": 73,
-              "bottomRow": 1633,
+              "bottomRow": 1623,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 1560,
+              "minHeight": 1550,
               "animateLoading": true,
               "parentColumnSpace": 22.0625,
               "leftColumn": 20,
@@ -964,7 +964,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1560,
+                  "bottomRow": 1550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1125,6 +1125,15 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.Refreshed_Date.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.primary.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.primary.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.primary.borderRadius"
                         }
                       ],
                       "showReset": true,
@@ -1219,7 +1228,7 @@
                       },
                       "disabledWhenInvalid": true,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 137,
+                      "originalBottomRow": 154,
                       "useSourceData": false,
                       "schema": {
                         "__root_schema__": {
@@ -1584,6 +1593,28 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "Refreshed Date"
+                            },
+                            "primary": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.primary))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "daksh.sahni@swiggy.in_Analytics",
+                              "isCustomField": false,
+                              "accessor": "primary",
+                              "identifier": "primary",
+                              "position": 16,
+                              "originalIdentifier": "primary",
+                              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Primary"
                             }
                           },
                           "dataType": "object",
@@ -1619,7 +1650,7 @@
                       },
                       "dynamicPropertyPathList": [],
                       "displayName": "JSON Form",
-                      "bottomRow": 154,
+                      "bottomRow": 153,
                       "fieldLimitExceeded": false,
                       "parentRowSpace": 10,
                       "title": "Form",
@@ -1808,7 +1839,7 @@
                 }
               ],
               "key": "zfohhxtx5c",
-              "height": 1560,
+              "height": 1550,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -2499,11 +2530,7 @@
               "widgetName": "Button5",
               "onClick": "{{update_data.run().then(() => {\n  showAlert('Thank You. Your response has been recorded.', '');\n});}}",
               "buttonColor": "#14532d",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
+              "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
